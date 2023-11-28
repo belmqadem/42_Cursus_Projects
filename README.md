@@ -5,6 +5,7 @@ Welcome to my repository for 42 Cursus projects! This repository contains a coll
 ## Table of Contents
 
 - [Libft](./Libft/): Your very first own library
+- [ft_printf](./ft_printf/): Because ft_putnbr() and ft_putstr() aren’t enough
 - ...
 
 ## About 42 Cursus
