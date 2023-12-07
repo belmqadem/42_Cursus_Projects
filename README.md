@@ -21,7 +21,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 
 - **Libft:** Building a personal library with fundamental functions.
 - **ft_printf:** Creating a custom printf function to format and print output.
-- **get_next_line:** This project is about programming a function that returns a line read from a file descriptor.
+- **get_next_line:** Programming a function that returns a line read from a file descriptor.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
