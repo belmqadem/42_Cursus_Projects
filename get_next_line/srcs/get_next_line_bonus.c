@@ -6,7 +6,7 @@
 /*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 21:41:40 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/12/07 09:09:31 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2023/12/20 13:57:14 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ static char	*ft_backup(char *stash)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[1023];
+	static char	*stash[1025];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
