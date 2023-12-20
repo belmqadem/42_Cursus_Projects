@@ -8,7 +8,8 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 
 1. **Libft:** Your very first own library
 2. **ft_printf:** Because ft_putnbr() and ft_putstr() aren’t enough
-3. ...
+3. **get_next_line:** Reading a line from a fd is way too tedious
+4. ...
 
 ## About 42 Cursus ℹ️
 
@@ -20,6 +21,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 
 - **Libft:** Building a personal library with fundamental functions.
 - **ft_printf:** Creating a custom printf function to format and print output.
+- **get_next_line:** Programming a function that returns a line read from a file descriptor.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
