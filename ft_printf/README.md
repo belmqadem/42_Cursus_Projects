@@ -1,4 +1,4 @@
-# ft_printf Project README
+# <div align="center"> ft_printf function </div>
 
 ## Overview 📝
 
