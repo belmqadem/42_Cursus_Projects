@@ -1,16 +1,16 @@
 # <div align=center> PIPEX </div>
 
-## Overview
+## Overview 📝
 pipex is a program that emulates the functionality of the shell pipe (|) in the Unix environment. It allows users to execute shell commands sequentially, with the output of one command serving as the input for the next. This project aims to provide a deeper understanding of the underlying Unix mechanisms by implementing them in a C program.
 
-## External Functions
+## External Functions 🔧
 - `open`, `close`, `read`, `write`
 - `malloc`, `free`, `perror`
 - `strerror`, `access`, `dup`, `dup2`
 - `execve`, `exit`, `fork`, `pipe`
 - `unlink`, `wait`, `waitpid`
 
-## Usage
+## Usage 🚦
 ```bash
 ./pipex file1 cmd1 cmd2 file2
 ```
@@ -26,7 +26,7 @@ pipex is a program that emulates the functionality of the shell pipe (|) in the 
 ```
 This will behave like: $> <b> `< infile grep a1 | wc -w > outfile` </b>
 
-## Bonus Features
+## Bonus Features 🌟
 - <b>Multiple Pipes:</b> Support for executing multiple commands sequentially.
 ```c
 ./pipex file1 "cmd1" "cmd2" "cmd3" ... "cmdn" file2
@@ -39,7 +39,7 @@ This will behave like: $> <b> `< file1 cmd1 | cmd2 | cmd3 ... | cmdn > file2` </
 ```
 This will behave like: $> <b> `cmd << LIMITER | cmd1 >> file1` </b>
 
-## Installation 
+## Installation 🛠️
 1. Clone the repository:
 ```c
 git clone https://github.com/yourusername/pipex.git
@@ -53,5 +53,5 @@ cd pipex
 make
 ```
 
-## Contributing
+## Contributing 🤝
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
