@@ -6,7 +6,7 @@
 /*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 15:06:04 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/11/28 15:24:37 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/03/25 22:02:23 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-// # include <stdio.h>
 
 // main function
 int	ft_printf(const char *s, ...);
