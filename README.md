@@ -10,7 +10,8 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 2. **ft_printf:** Because ft_putnbr() and ft_putstr() aren’t enough
 3. **get_next_line:** Reading a line from a fd is way too tedious
 4. **pipex:** Discover a UNIX mechanism that you already know by using it in your program
-5. ...
+5. **push_swap:** Because Swap_push isn't as natural
+6. ...
 
 ## About 42 Cursus ℹ️
 
@@ -24,6 +25,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **ft_printf:** Creating a custom printf function to format and print output.
 - **get_next_line:** Programming a function that returns a line read from a file descriptor.
 - **pipex:** pipex is a program that emulates the functionality of the shell pipe (|) in the Unix environment.
+- **push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
