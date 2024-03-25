@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abel-mqa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 17:54:55 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/11/14 15:23:43 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/03/25 21:44:53 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,23 +32,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
-/*
-char	ft_modify_char(unsigned int index, char c)
-{
-	if (index % 2 == 0)
-	{
-		if (c >= 'a' && c <= 'z')
-			c -= 32;
-		return (c);
-	}
-	return (c);
-}
-int	main()
-{
-	char	str[] = "what's happen in vegas stay in vegas";
-	printf("Original string: %s\n", str);
-	char	*str2 = ft_strmapi(str, &ft_modify_char);
-	printf("Modified string: %s\n", str2);
-	free(str2);
-}
-*/

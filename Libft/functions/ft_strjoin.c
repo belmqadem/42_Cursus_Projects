@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abel-mqa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:25:27 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/11/15 20:56:33 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/03/25 21:44:41 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, s2, flen);
 	return (str);
 }
-/*
-int	main()
-{
-	char	s1[] = "Say my name ! ";
-	char	s2[] = "HEISENBERG";
-	char	*str = ft_strjoin(s1, s2);
-	printf("%s", str);
-	free(str);
-}
-*/

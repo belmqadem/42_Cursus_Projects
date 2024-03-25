@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abel-mqa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 15:30:54 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/11/14 23:08:26 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/03/25 21:42:14 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,17 +54,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
-int main()
-{
-	char *s1 = ft_itoa(2147483647);
-	char *s2 = ft_itoa(-2147483648);
-	char *s3 = ft_itoa(0);
-	printf("num1: %s\n", s1);
-	printf("num2: %s\n", s2);
-	printf("num3: %s\n", s3);
-	free(s1);
-	free(s2);
-	free(s3);
-}
-*/

@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abel-mqa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:50:25 by abel-mqa          #+#    #+#             */
-/*   Updated: 2023/11/23 13:42:50 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/03/25 21:46:22 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// # include <stdio.h>
-// # include <fcntl.h>
-// # include <string.h>
 # include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
