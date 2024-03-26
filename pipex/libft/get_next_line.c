@@ -12,110 +12,79 @@
 
 #include "libft.h"
 
-static char	*ft_free(char *buffer, char *buf)
+static char	*ft_sub(char **stash, char **line)
 {
-	char	*temp;
+	char	*str;
 
-	temp = ft_strjoin(buffer, buf);
-	free(buffer);
-	return (temp);
-}
-
-static char	*read_file(int fd, char *stash)
-{
-	char	*buffer;
-	int		byte_read;
-
-	if (!stash)
-		stash = ft_calloc(1, 1);
-	buffer = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
-	byte_read = 1;
-	while (byte_read > 0)
+	str = NULL;
+	if (*stash)
 	{
-		byte_read = read(fd, buffer, BUFFER_SIZE);
-		if (byte_read == -1)
+		*line = *stash;
+		str = ft_strchr(*stash, '\n');
+		if (str)
 		{
-			free(buffer);
-			return (NULL);
+			str++;
+			if (*str != '\0')
+				*stash = ft_strdup(str);
+			else
+				*stash = NULL;
+			*str = '\0';
 		}
-		buffer[byte_read] = 0;
-		stash = ft_free(stash, buffer);
-		if (ft_strchr(buffer, '\n'))
-			break ;
+		else
+			*stash = NULL;
 	}
-	free(buffer);
-	return (stash);
+	else
+	{
+		*line = (char *)malloc(sizeof(char) * 1);
+		*line[0] = '\0';
+	}
+	return (str);
 }
 
-static char	*extract_line(char *stash)
+static char	*ft_sub_2(char **stash, char **line, char **buffer)
 {
-	char	*next_line;
-	int		i;
+	char	*str;
+	char	*tmp;
 
-	i = 0;
-	if (!stash[i])
-		return (NULL);
-	while (stash[i] && stash[i] != '\n')
-		i++;
-	next_line = (char *)malloc((i + 2) * sizeof(char));
-	if (!next_line)
-		return (NULL);
-	i = 0;
-	while (stash[i] && stash[i] != '\n')
+	str = ft_strchr(*buffer, '\n');
+	if (str)
 	{
-		next_line[i] = stash[i];
-		i++;
+		str++;
+		if (*str != '\0')
+			*stash = ft_strdup(str);
+		*str = '\0';
 	}
-	if (stash[i] == '\n')
-	{
-		next_line[i] = stash[i];
-		i++;
-	}
-	next_line[i] = '\0';
-	return (next_line);
-}
-
-static char	*ft_backup(char *stash)
-{
-	char	*line;
-	int		i;
-	int		j;
-
-	i = 0;
-	while (stash[i] && stash[i] != '\n')
-		i++;
-	if (!stash[i])
-	{
-		free(stash);
-		return (NULL);
-	}
-	line = malloc((ft_strlen(stash) - i + 1) * sizeof(char));
-	if (!line)
-	{
-		free (stash);
-		return (NULL);
-	}
-	i++;
-	j = 0;
-	while (stash[i])
-		line[j++] = stash[i++];
-	line[j] = '\0';
-	free(stash);
-	return (line);
+	tmp = *line;
+	*line = ft_strjoin(*line, *buffer);
+	free(tmp);
+	return (str);
 }
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[1025];
+	static char	*stash[1024];
+	char		*buffer;
+	char		*str;
 	char		*line;
+	int			bytes;
 
+	if (BUFFER_SIZE < 1 || read(fd, 0, 0) == -1 || fd < 0)
+		return (NULL);
 	ft_putstr_fd("pipe heredoc> ", 1);
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
+	buffer = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	if (!buffer)
 		return (NULL);
-	stash[fd] = read_file(fd, stash[fd]);
-	if (!stash[fd])
-		return (NULL);
-	line = extract_line(stash[fd]);
-	stash[fd] = ft_backup(stash[fd]);
-	return (line);
+	str = ft_sub(&stash[fd], &line);
+	bytes = 1;
+	while (!str && bytes)
+	{
+		bytes = read(fd, buffer, BUFFER_SIZE);
+		buffer[bytes] = '\0';
+		str = ft_sub_2(&stash[fd], &line, &buffer);
+	}
+	free(buffer);
+	if (ft_strlen(line) > 0)
+		return (line);
+	free (line);
+	return (NULL);
 }
