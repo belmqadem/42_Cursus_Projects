@@ -33,7 +33,7 @@ This will behave like: $> <b> `< infile grep a1 | wc -w > outfile` </b>
 ```
 This will behave like: $> <b> `< file1 cmd1 | cmd2 | cmd3 ... | cmdn > file2` </b>
 
-- <b>Here Document Support:</b> Support for < and > when the first parameter is "here_doc".
+- <b>Here Document Support:</b> Support for << and >> when the first parameter is "here_doc".
 ```c
 ./pipex here_doc LIMITER "cmd" "cmd1" file
 ```
