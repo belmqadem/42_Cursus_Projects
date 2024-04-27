@@ -8,10 +8,11 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 
 1. **Libft:** Your very first own library
 2. **ft_printf:** Because ft_putnbr() and ft_putstr() aren’t enough
-3. **get_next_line:** Reading a line from a fd is way too tedious
+3. **Get Next Line:** Reading a line from a fd is way too tedious
 4. **pipex:** Discover a UNIX mechanism that you already know by using it in your program
-5. **push_swap:** Because Swap_push isn't as natural
-6. ...
+5. **Push_swap:** Because Swap_push isn't as natural
+6. **So Long:** And thanks for all the fish!
+7. ...
 
 ## About 42 Cursus ℹ️
 
@@ -23,9 +24,10 @@ The projects in this repository cover a spectrum of programming concepts, includ
 
 - **Libft:** Building a personal library with fundamental functions.
 - **ft_printf:** Creating a custom printf function to format and print output.
-- **get_next_line:** Programming a function that returns a line read from a file descriptor.
+- **Get Next Line:** Programming a function that returns a line read from a file descriptor.
 - **pipex:** pipex is a program that emulates the functionality of the shell pipe (|) in the Unix environment.
-- **push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
+- **Push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
+- **So Long:** A very small 2D game. Its purpose is to make you work with you work with textures, sprites and some other very basic gameplay elements.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
