@@ -6,7 +6,7 @@
 /*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 12:54:22 by abel-mqa          #+#    #+#             */
-/*   Updated: 2024/04/25 15:02:22 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/04/30 23:28:26 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 void	import_images(t_mlx_data *data)
 {
 	data->img.floor = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/floor.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/floor.xpm", &data->img.img_w, &data->img.img_h);
 	data->img.obj = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/collectible.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/collectible.xpm", &data->img.img_w, &data->img.img_h);
 	data->img.exit_1 = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/exit_1.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/exit_1.xpm", &data->img.img_w, &data->img.img_h);
 	data->img.exit_0 = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/exit_0.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/exit_0.xpm", &data->img.img_w, &data->img.img_h);
 	data->img.wall = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/wall.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/wall.xpm", &data->img.img_w, &data->img.img_h);
 	data->img.player = mlx_xpm_file_to_image(data->mlx_connection,
-			"./tiles/player.xpm", &data->img.img_w, &data->img.img_h);
+			"./textures/player.xpm", &data->img.img_w, &data->img.img_h);
 	if (!data->img.floor || !data->img.obj || !data->img.exit_1
 		|| !data->img.exit_0 || !data->img.wall || !data->img.player)
 	{

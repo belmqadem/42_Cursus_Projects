@@ -6,7 +6,7 @@
 /*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 02:06:53 by abel-mqa          #+#    #+#             */
-/*   Updated: 2024/04/27 15:13:40 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/04/28 02:20:16 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,6 +131,7 @@ void	handle_moves(int keysym, t_mlx_data *data);
 void	exit_game(t_mlx_data *data, int code);
 void	set_player(t_mlx_data *data, int x, int y);
 void	play_game(t_mlx_data *data, int x, int y);
+void	win_and_exit(t_mlx_data *data, int x, int y);
 void	step_up(t_mlx_data *data);
 void	step_down(t_mlx_data *data);
 void	step_right(t_mlx_data *data);

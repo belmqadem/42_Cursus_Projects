@@ -6,7 +6,7 @@
 /*   By: abel-mqa <abel-mqa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:32:18 by abel-mqa          #+#    #+#             */
-/*   Updated: 2024/04/27 14:15:02 by abel-mqa         ###   ########.fr       */
+/*   Updated: 2024/04/28 02:21:01 by abel-mqa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	set_player(t_mlx_data *data, int x, int y)
 {
 	play_game(data, x, y);
+	win_and_exit(data, x, y);
 	data->pos.x_p += x;
 	data->pos.y_p += y;
 	data->map.map[data->pos.y_p][data->pos.x_p] = 'P';
@@ -47,9 +48,15 @@ void	play_game(t_mlx_data *data, int x, int y)
 			data->img.exit_1, data->pos.x_e * SIZE, data->pos.y_e * SIZE);
 		data->map.map[data->pos.y_e][data->pos.x_e] = 'e';
 	}
+}
+
+void	win_and_exit(t_mlx_data *data, int x, int y)
+{
 	if (data->map.map[data->pos.y_p + y][data->pos.x_p + x] == 'e')
 	{
 		data->elem.c_exit -= 1;
+		(data->moves)++;
+		ft_printf(">> " MAGENTA "Move n°: " RESET "%d\n", data->moves);
 		ft_printf(GREEN WIN_MSG RESET, data->moves);
 		exit_game(data, 0);
 	}
