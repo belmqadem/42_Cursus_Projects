@@ -27,7 +27,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **Get Next Line:** Programming a function that returns a line read from a file descriptor.
 - **pipex:** pipex is a program that emulates the functionality of the shell pipe (|) in the Unix environment.
 - **Push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
-- **So Long:** A very small 2D game. Its purpose is to make you work with you work with textures, sprites and some other very basic gameplay elements.
+- **So Long:** A small 2D game with minilibx. You'll learn about textures, sprites and tiles.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
