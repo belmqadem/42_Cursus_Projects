@@ -30,7 +30,7 @@ The MiniLibX is a graphics library developed internally at 42 school. It include
 ## Theme 🎨
 The game's theme is inspired by "Greed Island" from the "Hunter x Hunter" series, featuring the main character Gon. The collectibles in the game are cards.
 
-## Compiling on Linux
+## Compiling on Linux ⚙️
 If you want to compile the project on Linux, you will need to install the MiniLibX library. You can follow these steps:
 
 1. Install the required packages:
@@ -61,3 +61,6 @@ MLX_FLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(MLX_FLAGS)
 ```
+
+## Contributing ✍
+Contributions are welcome! Please fork the repository and submit a pull request.
