@@ -6,13 +6,12 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 
 ### Table of Contents 📑
 
-1. **Libft:** Your very first own library
-2. **ft_printf:** Because ft_putnbr() and ft_putstr() aren’t enough
-3. **Get Next Line:** Reading a line from a fd is way too tedious
-4. **pipex:** Discover a UNIX mechanism that you already know by using it in your program
-5. **Push_swap:** Because Swap_push isn't as natural
-6. **So Long:** And thanks for all the fish!
-7. ...
+1. [**Libft:** Your very first own library](https://github.com/belmqadem/42_Cursus_Projects/tree/main/Libft)
+2. [**ft_printf:** Because ft_putnbr() and ft_putstr() aren’t enough](https://github.com/belmqadem/42_Cursus_Projects/tree/main/ft_printf)
+3. [**Get Next Line:** Reading a line from a fd is way too tedious](https://github.com/belmqadem/42_Cursus_Projects/tree/main/get_next_line)
+4. [**pipex:** Discover a UNIX mechanism that you already know by using it in your program](https://github.com/belmqadem/42_Cursus_Projects/tree/main/pipex)
+5. [**Push_swap:** Because Swap_push isn't as natural](https://github.com/belmqadem/42_Cursus_Projects/tree/main/push_swap)
+6. [**So Long:** And thanks for all the fish!](https://github.com/belmqadem/42_Cursus_Projects/tree/main/so_long)
 
 ## About 42 Cursus ℹ️
 
@@ -25,7 +24,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **Libft:** Building a personal library with fundamental functions.
 - **ft_printf:** Creating a custom printf function to format and print output.
 - **Get Next Line:** Programming a function that returns a line read from a file descriptor.
-- **pipex:** pipex is a program that emulates the functionality of the shell pipe (|) in the Unix environment.
+- **pipex:** A program that emulates the functionality of the shell pipe (|) in the Unix environment.
 - **Push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
 - **So Long:** A small 2D game with minilibx. You'll learn about textures, sprites and tiles.
 - ...
