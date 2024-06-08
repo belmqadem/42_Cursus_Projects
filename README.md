@@ -12,6 +12,7 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 4. [**pipex:** Discover a UNIX mechanism that you already know by using it in your program](https://github.com/belmqadem/42_Cursus_Projects/tree/main/pipex)
 5. [**Push_swap:** Because Swap_push isn't as natural](https://github.com/belmqadem/42_Cursus_Projects/tree/main/push_swap)
 6. [**So Long:** And thanks for all the fish!](https://github.com/belmqadem/42_Cursus_Projects/tree/main/so_long)
+7. [**Philosophers:** I never thought philosophy would be so deadly](https://github.com/belmqadem/42_Cursus_Projects/tree/main/philosophers)
 
 ## About 42 Cursus ℹ️
 
@@ -27,6 +28,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **pipex:** A program that emulates the functionality of the shell pipe (|) in the Unix environment.
 - **Push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
 - **So Long:** A small 2D game with minilibx. You'll learn about textures, sprites and tiles.
+- **Philosophers:** A project about the basics of threading a process. You will see how to create threads and you will discover mutexes.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
