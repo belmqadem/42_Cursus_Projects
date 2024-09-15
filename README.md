@@ -13,6 +13,7 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 5. [**Push_swap:** Because Swap_push isn't as natural](https://github.com/belmqadem/42_Cursus_Projects/tree/main/push_swap)
 6. [**So Long:** And thanks for all the fish!](https://github.com/belmqadem/42_Cursus_Projects/tree/main/so_long)
 7. [**Philosophers:** I never thought philosophy would be so deadly](https://github.com/belmqadem/42_Cursus_Projects/tree/main/philosophers)
+8. [**minishell:** As beautiful as a shell](https://github.com/belmqadem/42_Cursus_Projects/tree/main/minishell)
 
 ## About 42 Cursus ℹ️
 
@@ -29,6 +30,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **Push_swap:** Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.
 - **So Long:** A small 2D game with minilibx. You'll learn about textures, sprites and tiles.
 - **Philosophers:** A project about the basics of threading a process. You will see how to create threads and you will discover mutexes.
+- **minishell:** This project is about creating a simple shell. Yes, your own little bash.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
