@@ -54,8 +54,8 @@ The **execution** part is where the parsed commands are executed. This part deal
 
 ## Resources 📚
 
-- [📖 Bash Documentation](https://www.gnu.org/software/bash/manual/bash.html)
-- [🌐 Unix Shell Introduction](https://www.geeksforgeeks.org/introduction-of-shell-programming/)
+- [Bash Documentation](https://www.gnu.org/software/bash/manual/bash.html)
+- [Unix Shell Introduction](https://www.geeksforgeeks.org/introduction-of-shell-programming/)
 
 
 
