@@ -1,0 +1,17 @@
+F	0,0,0
+
+NO ./textures/walls/godfather.xpm
+
+EA 	./textures/walls/godfather.xpm
+WE ./textures/walls/godfather.xpm
+
+C	0,       0,  0 
+
+SO             ./textures/walls/godfather.xpm
+
+11111111111111111
+10000000000000001
+10000000000000001
+100000000W0000001
+10000000000000001
+11111111111111111
