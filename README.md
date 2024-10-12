@@ -14,6 +14,7 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 6. [**So Long:** And thanks for all the fish!](https://github.com/belmqadem/42_Cursus_Projects/tree/main/so_long)
 7. [**Philosophers:** I never thought philosophy would be so deadly](https://github.com/belmqadem/42_Cursus_Projects/tree/main/philosophers)
 8. [**minishell:** As beautiful as a shell](https://github.com/belmqadem/42_Cursus_Projects/tree/main/minishell)
+9. [**cub3d:** My first RayCaster with miniLibX](https://github.com/belmqadem/42_Cursus_Projects/tree/main/cub3d)
 
 ## About 42 Cursus ℹ️
 
@@ -31,6 +32,7 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **So Long:** A small 2D game with minilibx. You'll learn about textures, sprites and tiles.
 - **Philosophers:** A project about the basics of threading a process. You will see how to create threads and you will discover mutexes.
 - **minishell:** This project is about creating a simple shell. Yes, your own little bash.
+- **cub3d:** This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
