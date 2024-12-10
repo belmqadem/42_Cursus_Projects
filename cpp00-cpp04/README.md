@@ -52,6 +52,7 @@ This repository contains my solutions and implementations for the 42 C++ Modules
 
 ### **CPP04 - Abstract classes and interfaces**
 - **Summary**: Focuses on abstract classes and interfaces to define and enforce subtype polymorphism.
+- **Topics Covered**:
   - Subtype polymorphism
   - abstract classes
   - interfaces
