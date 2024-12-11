@@ -28,7 +28,7 @@ bool validateInput(const std::string &input)
 
 	while (iss >> token)
 	{
-		for (std::string::size_type i = 0; i < token.size(); ++i)
+		for (size_t i = 0; i < token.size(); ++i)
 			if (!isdigit(token[i]))
 			{
 				if (token[i] != '+')
@@ -36,7 +36,7 @@ bool validateInput(const std::string &input)
 				else if (i != 0)
 					return false;
 			}
-		if (token.length() > 10 || (token.length() == 10 && token > "2147483647"))
+		if ((token.length() == 10 && token > "2147483647"))
 			return false;
 		int number = std::atoi(token.c_str());
 		numbers.push_back(number);

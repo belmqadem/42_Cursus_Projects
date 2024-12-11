@@ -22,6 +22,11 @@ RPN &RPN::operator=(const RPN &other)
 
 RPN::~RPN() {}
 
+bool RPN::is_valid(const std::string &token)
+{
+	return token.length() == 1 && isdigit(token[0]);
+}
+
 void RPN::calculate()
 {
 	std::istringstream iss(this->expression);
@@ -65,11 +70,14 @@ void RPN::calculate()
 				exit(1);
 			}
 		}
+		else if (is_valid(token))
+		{
+			this->stack.push(std::atoi(token.c_str()));
+		}
 		else
 		{
-			int n = std::atoi(token.c_str());
-			if (n >= 0 && n <= 9)
-				this->stack.push(n);
+			std::cerr << ERR << std::endl;
+			exit(1);
 		}
 	}
 	if (this->stack.size() != 1)

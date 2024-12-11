@@ -37,6 +37,7 @@ public:
 
 	void calculate();
 	void printResult() const;
+	bool is_valid(const std::string& token);
 };
 
 #endif
