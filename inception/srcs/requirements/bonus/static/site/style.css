@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hero {
+	background-color: #172028;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 5px 25px;
+}
+
+/* Start Header */
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	animation: popup 1.4s;
+}
+
+.header img {
+	width: 112px;
+	height: 72px;
+}
+
+.header h1 {
+	font-family: "Overlock", serif;
+	font-weight: bold;
+	font-size: 112px;
+	background: linear-gradient(to right, #039BC6 34%, #C7B804 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Finish Header */
+
+/* Start Mandatory */
+.mandatory {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 37px;
+	animation: popup 1.4s;
+}
+
+.mandatory div {
+	flex-basis: 280px;
+	height: 340px;
+	border-radius: 50px;
+	background: linear-gradient(#039BC6 0%, #014B60 100%);
+	padding: 30px 15px;
+	box-shadow: 5px 3px 18px 3px rgba(199, 184, 4, 0.25);
+	text-align: center;
+	transition-duration: 0.4s;
+	cursor: default;
+}
+
+.mandatory div:hover {
+	box-shadow: 5px 3px 12px 2px rgba(8, 8, 8, 0.742);
+}
+
+.mandatory div h2 {
+	font-size: 36px;
+	color: #EBD900;
+	font-weight: bold;
+	margin-bottom: 55px;
+	font-family: "Playwrite IN", serif;
+}
+
+.mandatory div p {
+	font-family: "Lily Script One", serif;
+	font-size: 20px;
+	color: #fff;
+}
+
+/* Finish Mandatory */
+
+/* Start Bonus */
+.bonus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 26px;
+	animation: popup 1.4s;
+}
+
+.bonus div {
+	flex-basis: 240px;
+	height: 300px;
+	border-radius: 50px;
+	text-align: center;
+	padding: 50px 16px;
+	background: linear-gradient(#B9E8F5 40%, #039BC6 100%);
+	box-shadow: 5px 3px 12px 2px rgba(199, 184, 4, 0.25);
+	transition-duration: 0.4s;
+	cursor: default;
+}
+
+.bonus div:hover {
+	box-shadow: 3px 5px 10px 3px rgba(255, 255, 255, 0.742);
+}
+
+.bonus .static {
+	height: 350px;
+	cursor: pointer;
+}
+
+.bonus .static:hover {
+	transform: translateY(-10px);
+}
+
+.bonus div h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #3C2872;
+	margin-bottom: 45px;
+	font-family: "Playwrite IN", serif;
+}
+
+.bonus div p {
+	color: #333333;
+	font-family: "Lily Script One", serif;
+	font-size: 16px;
+}
+
+/* Finish Bonus */
+
+/* Start Responsive */
+@media (max-width: 1060px) {
+	.hero {
+		height: auto;
+	}
+
+	.header h1 {
+		font-size: 60px;
+	}
+
+	.header img {
+		width: 80px;
+		height: 50px;
+	}
+
+	.mandatory {
+		flex-direction: column;
+		margin: 45px 10px;
+	}
+
+	.mandatory div {
+		flex-basis: 200px;
+		height: 300px;
+		padding: 20px 60px;
+		max-width: 600px;
+	}
+
+	.mandatory div h2 {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+
+	.mandatory div p {
+		font-size: 18px;
+	}
+
+	.bonus {
+		flex-direction: column;
+		margin: 25px 10px;
+	}
+
+	.bonus div {
+		flex-basis: 200px;
+		max-width: 600px;
+		height: 260px;
+		padding: 20px 60px;
+	}
+
+	.bonus div h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.bonus div p {
+		font-size: 14px;
+	}
+}
+
+/* Finish Resposive */

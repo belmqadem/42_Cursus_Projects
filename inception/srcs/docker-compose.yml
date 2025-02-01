@@ -1,0 +1,119 @@
+services:
+  mariadb:
+    container_name: mariadb
+    networks:
+      - inception
+    build: ./requirements/mariadb
+    image: mariadb:notlatest
+    env_file: .env
+    volumes:
+      - mariadb:/var/lib/mysql
+    restart: always
+    expose:
+      - "3306"
+
+  nginx:
+    container_name: nginx
+    networks:
+      - inception
+    depends_on:
+      - wordpress
+    build: ./requirements/nginx
+    image: nginx:notlatest
+    env_file: .env
+    volumes:
+      - wordpress:/var/www/wordpress
+    restart: always
+    ports:
+      - "443:443"
+
+  wordpress:
+    container_name: wordpress
+    networks:
+      - inception
+    depends_on:
+      - mariadb
+    build: ./requirements/wordpress
+    image: wordpress:notlatest
+    env_file: .env
+    volumes:
+      - wordpress:/var/www/wordpress
+    restart: always
+    expose:
+      - "9000"
+
+  static:
+    container_name: static
+    networks:
+      - inception
+    build: ./requirements/bonus/static
+    image: static:notlatest
+    restart: always
+    expose:
+      - "80"
+
+  adminer:
+    container_name: adminer
+    networks:
+      - inception
+    depends_on:
+      - mariadb
+    build: ./requirements/bonus/adminer
+    image: adminer:notlatest
+    env_file: .env
+    restart: always
+    expose:
+      - "8080"
+
+  redis:
+    container_name: redis
+    networks:
+      - inception
+    build: ./requirements/bonus/redis
+    image: redis:notlatest
+    restart: always
+    expose:
+      - "6379"
+
+  grafana:
+    container_name: grafana
+    networks:
+      - inception
+    build: ./requirements/bonus/grafana
+    image: grafana:notlatest
+    restart: always
+    ports:
+      - "3000:3000"
+
+  ftp:
+    container_name: ftp
+    networks:
+      - inception
+    build: ./requirements/bonus/ftp
+    image: ftp:notlatest
+    volumes:
+      - wordpress:/var/www/wordpress
+    env_file: .env
+    restart: always
+    ports:
+      - "21:21"
+      - "21100-21110:21100-21110"
+
+volumes:
+  mariadb:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/abel-mqa/data/mariadb
+      o: bind
+  wordpress:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/abel-mqa/data/wordpress
+      o: bind
+
+networks:
+  inception:
+    name: inception
+    driver: bridge
