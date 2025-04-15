@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Webserv Testing Page</title>
+  </head>
+  <body>
+    <section class="testing" id="testing">
+      <section class="test-section">
+        <h2>Redirections</h2>
+        <a href="/github">Test 301 Redirect (Permanent)</a><br /><br />
+        <a href="/redirect">Test 302 Redirect (Temporary)</a>
+      </section>
+
+      <!-- Static Content Test -->
+      <section class="test-section">
+        <h2>GET - Static Files</h2>
+        <a href="/about.html">About Page</a><br /><br />
+        <a href="/list/">Directory Listing</a><br /><br />
+        <a href="/notfound">404 Not Found</a>
+      </section>
+
+      <!-- POST - File Upload -->
+      <section class="test-section">
+        <h2>POST - File Upload</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <label for="file-upload">Choose a file to upload:</label><br />
+          <input type="file" name="file" id="file-upload" required />
+          <br /><br />
+          <input type="submit" value="Upload File" />
+        </form>
+      </section>
+
+      <!-- POST - File Upload with CGI -->
+      <section class="test-section">
+        <h2>POST - File Upload With CGI</h2>
+        <form
+          action="/phpcgi/upload.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label for="file-upload">Choose a file to upload:</label><br />
+          <input type="file" name="file" id="file-upload" required />
+          <br /><br />
+          <input type="submit" value="Upload File" />
+        </form>
+      </section>
+
+      <!-- DELETE - File Deletion -->
+      <section class="test-section">
+        <h2>DELETE - File Deletion</h2>
+        <br />
+        <label for="delete">Select file to delete:</label><br />
+        <select name="delete" id="delete">
+          <option value="" disabled selected>Loading files...</option>
+        </select>
+        <br /><br />
+        <button id="delete-button">Delete File</button>
+      </section>
+
+      <!-- CGI Test -->
+      <section class="test-section">
+        <h2>CGI Script Execution</h2>
+        <a href="/pycgi/hello.py">Run Python CGI Script</a><br /><br />
+        <a href="/phpcgi/">Run PHP CGI Script</a>
+      </section>
+
+      <!-- Cookies Test -->
+      <section class="test-section">
+        <h2>Cookies & Session Test</h2>
+
+        <!-- Set Cookie -->
+        <form action="/pycgi/set_cookie.py" method="GET">
+          <label for="cookie-name">Cookie Name:</label><br />
+          <input
+            type="text"
+            name="name"
+            id="cookie-name"
+            required
+          /><br /><br />
+
+          <label for="cookie-value">Cookie Value:</label><br />
+          <input
+            type="text"
+            name="value"
+            id="cookie-value"
+            required
+          /><br /><br />
+
+          <input type="submit" value="Set Cookie" />
+        </form>
+
+        <br />
+
+        <!-- Show Sent Cookies -->
+        <a href="/pycgi/check_cookie.py">Check Cookies</a>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
