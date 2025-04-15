@@ -18,6 +18,7 @@ Welcome to my repository for 42 Cursus projects! This collection showcases a ser
 10. [**cpp00-cpp04:** C++ Modules from 00 to 04](https://github.com/belmqadem/42_Cursus_Projects/tree/main/cpp00-cpp04)
 10. [**cpp05-cpp09:** C++ Modules from 05 to 09](https://github.com/belmqadem/42_Cursus_Projects/tree/main/cpp05-cpp09)
 11. [**Inception:** One container is not enough. We need to go deeper](https://github.com/belmqadem/42_Cursus_Projects/tree/main/inception)
+12. [**Webserv:** This is when you finally understand why a URL starts with HTTP](https://github.com/belmqadem/42_Cursus_Projects/tree/main/webserv)
 
 ## About 42 Cursus ℹ️
 
@@ -36,8 +37,9 @@ The projects in this repository cover a spectrum of programming concepts, includ
 - **Philosophers:** A project about the basics of threading a process. You will see how to create threads and you will discover mutexes.
 - **minishell:** This project is about creating a simple shell. Yes, your own little bash.
 - **cub3d:** This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever.
-- **cpp00 - cpp09:** Introduction to Object-Oriented Programming. This will be the starting point of your C++ journey
-- **inception:** This project aims to broaden your knowledge of system administration by using Docker
+- **cpp modules:** Introduction to Object-Oriented Programming. This will be the starting point of your C++ journey.
+- **Inception:** This project aims to broaden your knowledge of system administration by using Docker.
+- **Webserv:** This project is about writing your ow HTTP server.
 - ...
 
 These projects expose students to various languages, frameworks, and technologies, providing a well-rounded learning experience.
@@ -51,10 +53,6 @@ To explore and run the projects, follow these general steps:
 3. Review the project's README for detailed instructions, dependencies, and build considerations.
 
 Feel free to adapt the projects to your preferred development environment or explore them using the 42-specific setup.
-
-## Contributing 🤝
-
-Contributions and feedback are always welcome! If you'd like to contribute, open an issue or submit a pull request. Your insights can help improve the quality of the projects and provide additional resources for learners.
 
 ## License 📜
 
